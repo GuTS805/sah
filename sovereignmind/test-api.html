@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API Test</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background: #1a1a2e;
+            color: white;
+        }
+
+        button {
+            background: #6366f1;
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 16px;
+            margin: 10px 5px;
+        }
+
+        button:hover {
+            background: #4f46e5;
+        }
+
+        #result {
+            margin-top: 20px;
+            padding: 20px;
+            background: #252541;
+            border-radius: 8px;
+            white-space: pre-wrap;
+            word-wrap: break-word;
+        }
+
+        .error {
+            color: #ef4444;
+        }
+
+        .success {
+            color: #10b981;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>🧪 Gemini API Test</h1>
+    <p>Testing the Google Gemini API connection...</p>
+
+    <button onclick="testAPI()">Test API Connection</button>
+    <button onclick="testSimple()">Test Simple Request</button>
+    <button onclick="clearResult()">Clear</button>
+
+    <div id="result"></div>
+
+    <script>
+        const API_KEY = 'AIzaSyB0A9-JsRa0Qq1PiiuDUvx0nXleS1SSmuc';
+        const API_ENDPOINT = 'https://generativelanguage.googleapis.com/v1/models/gemini-2.5-flash-latest-exp:generateContent';
+
+        function log(message, isError = false) {
+            const resultDiv = document.getElementById('result');
+            const className = isError ? 'error' : 'success';
+            resultDiv.innerHTML += `<div class="${className}">${message}</div>\n`;
+        }
+
+        function clearResult() {
+            document.getElementById('result').innerHTML = '';
+        }
+
+        async function testAPI() {
+            clearResult();
+            log('🔄 Testing API connection...');
+
+            try {
+                const response = await fetch(API_ENDPOINT, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                        'x-goog-api-key': API_KEY
+                    },
+                    body: JSON.stringify({
+                        contents: [{
+                            parts: [{
+                                text: 'Say hello in one sentence.'
+                            }]
+                        }]
+                    })
+                });
+
+                log(`Response Status: ${response.status} ${response.statusText}`);
+
+                const data = await response.json();
+                log('Full Response:');
+                log(JSON.stringify(data, null, 2));
+
+                if (response.ok && data.candidates && data.candidates.length > 0) {
+                    log('\n✅ SUCCESS! AI Response:');
+                    log(data.candidates[0].content.parts[0].text);
+                } else {
+                    log('\n❌ ERROR: No valid response', true);
+                }
+
+            } catch (error) {
+                log(`\n❌ ERROR: ${error.message}`, true);
+                console.error('Full error:', error);
+            }
+        }
+
+        async function testSimple() {
+            clearResult();
+            log('🔄 Testing simple math question...');
+
+            try {
+                const response = await fetch(API_ENDPOINT, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                        'x-goog-api-key': API_KEY
+                    },
+                    body: JSON.stringify({
+                        contents: [{
+                            parts: [{
+                                text: 'What is 2 + 2? Answer in one short sentence.'
+                            }]
+                        }],
+                        generationConfig: {
+                            temperature: 0.7,
+                            maxOutputTokens: 100
+                        }
+                    })
+                });
+
+                const data = await response.json();
+
+                if (response.ok && data.candidates && data.candidates.length > 0) {
+                    log('✅ SUCCESS!');
+                    log(`Question: What is 2 + 2?`);
+                    log(`AI Answer: ${data.candidates[0].content.parts[0].text}`);
+                } else {
+                    log('❌ ERROR:', true);
+                    log(JSON.stringify(data, null, 2), true);
+                }
+
+            } catch (error) {
+                log(`❌ ERROR: ${error.message}`, true);
+                console.error('Full error:', error);
+            }
+        }
+
+        // Auto-test on load
+        window.onload = () => {
+            log('Page loaded. Click "Test API Connection" to start.');
+        };
+    </script>
+</body>
+
+</html>

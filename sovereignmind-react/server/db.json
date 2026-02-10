@@ -1,0 +1,300 @@
+{
+  "lessonsData": {
+    "mathematics": [
+      {
+        "id": "m1",
+        "title": "Introduction to Algebra",
+        "description": "Variables, equations, and basic operations",
+        "completed": true,
+        "xp": 100,
+        "content": "**Algebra** is the branch of mathematics that uses letters (variables) to represent numbers.\n            \n### 1. Variables\nA variable is a symbol (usually a letter like x or y) used to represent a number that we don't know yet.\nExample: In x + 2 = 5, x is the variable.\n\n### 2. Expressions\nAn expression is a combination of numbers, variables, and operators.\nExample: 3x + 4 is an expression.\n\n### 3. Equations\nAn equation says that two things are equal. It will have an equals sign \"=\" like this:\nx + 2 = 6\n\nTo solve it, we do the opposite operation to isolate x:\nx = 6 - 2\nx = 4",
+        "keyPoints": [
+          "Use letters for unknown numbers",
+          "Perform inverse operations to solve",
+          "Keep equations balanced"
+        ]
+      },
+      {
+        "id": "m2",
+        "title": "Geometry Basics",
+        "description": "Points, lines, angles, and shapes",
+        "completed": true,
+        "xp": 100,
+        "content": "**Geometry** is all about shapes and their properties.\n\n### 1. Basic Elements\n- **Point:** A precise location in space.\n- **Line:** Straight path extending in both directions forever.\n- **Segment:** Part of a line with two endpoints.\n- **Ray:** Starts at a point and goes on forever one way.\n\n### 2. Angles\nMeasured in degrees (°).\n- **Acute:** Less than 90°\n- **Right:** Exactly 90°\n- **Obtuse:** More than 90°\n- **Straight:** Exactly 180°\n\n### 3. Polygons\nClosed shapes with straight sides:\n- Triangle (3 sides)\n- Quadrilateral (4 sides)\n- Pentagon (5 sides)",
+        "keyPoints": [
+          "Points define location",
+          "Angles measure turn",
+          "Polygons are closed shapes"
+        ]
+      },
+      {
+        "id": "m3",
+        "title": "Calculus I",
+        "description": "Limits, derivatives, and integrals",
+        "completed": true,
+        "xp": 150,
+        "content": "**Calculus** is the study of continuous change.\n\n### 1. Limits\nWhat happens to a function as inputs get super close to a value?\nlim(x→2) of x² is 4.\n\n### 2. Derivatives (Rate of Change)\nTells you the slope of a curve at any single point.\nIf position is f(t), velocity is f'(t).\n\n### 3. Integrals (Area Under Curve)\nAdds up infinitely many small pieces to find a total amount.\nUsed to find areas, volumes, and totals.",
+        "keyPoints": [
+          "Change is constant",
+          "Derivatives = Slope",
+          "Integrals = Area"
+        ]
+      }
+    ],
+    "science": [
+      {
+        "id": "s1",
+        "title": "The Scientific Method",
+        "description": "Hypothesis, experiment, and analysis",
+        "completed": false,
+        "xp": 100,
+        "content": "The **Scientific Method** is a process for experimentation.\n\n### Steps:\n1. **Observation:** Notice something interesting.\n2. **Question:** Ask \"Why does that happen?\"\n3. **Hypothesis:** Make an educated guess (prediction).\n4. **Experiment:** Test your hypothesis fairly.\n5. **Analysis:** Look at the data.\n6. **Conclusion:** Was your hypothesis right?\n\nThis cycle is how we discover truth about the universe!",
+        "keyPoints": [
+          "Observe and Question",
+          "Test with Experiments",
+          "Analyze Data"
+        ]
+      },
+      {
+        "id": "s2",
+        "title": "Physics: Motion",
+        "description": "Velocity, acceleration, and Newton's laws",
+        "completed": false,
+        "xp": 120,
+        "content": "**Newton's Laws of Motion** govern how things move.\n\n### 1. Law of Inertia\nAn object at rest stays at rest, and an object in motion stays in motion, unless acted on by a force.\n\n### 2. F = ma\nForce equals mass times acceleration.\nPushing a heavy truck is harder than pushing a bike!\n\n### 3. Action-Reaction\nFor every action, there is an equal and opposite reaction.\nPush a wall, and the wall pushes back on you.",
+        "keyPoints": [
+          "Inertia resists change",
+          "Force = Mass × Acceleration",
+          "Equal/Opposite reactions"
+        ]
+      },
+      {
+        "id": "s3",
+        "title": "Biology: Cells",
+        "description": "Structure and function of living cells",
+        "completed": false,
+        "xp": 120,
+        "content": "**Cells** are the building blocks of life.\n\n### 1. Cell Theory\n- All living things are made of cells.\n- Cells come from other cells.\n\n### 2. Parts of a Cell\n- **Nucleus:** The brain (holds DNA).\n- **Mitochondria:** Powerhouse (makes energy).\n- **Cell Membrane:** The skin (protects inside).\n- **Cytoplasm:** Jelly-like filler.\n\n### 3. Plant vs Animal\nPlant cells have rigid **Cell Walls** and **Chloroplasts** for making food from sunlight!",
+        "keyPoints": [
+          "Basic unit of life",
+          "Organelles do specific jobs",
+          "Plants have cell walls"
+        ]
+      }
+    ],
+    "programming": [
+      {
+        "id": "p1",
+        "title": "Python Basics",
+        "description": "Variables, loops, and functions",
+        "completed": false,
+        "xp": 100,
+        "content": "**Python** is a powerful and readable language.\n\n### 1. Variables\nStorage boxes for data.\n```python\nname = \"Alice\"\nage = 25\n```\n\n### 2. Loops\nRepeat code automatically.\n```python\n# Prints 0 to 4\nfor i in range(5):\n    print(i)\n```\n\n### 3. Functions\nReusable blocks of code.\n```python\ndef greet(name):\n    return \"Hello \" + name\n\nprint(greet(\"Bob\"))\n```",
+        "keyPoints": [
+          "Readable syntax",
+          "Variables store data",
+          "Loops repeat actions"
+        ]
+      },
+      {
+        "id": "p2",
+        "title": "Web Development",
+        "description": "HTML, CSS, and JavaScript Fundamentals",
+        "completed": false,
+        "xp": 150,
+        "content": "**Web Development** builds the internet!\n\n### 1. HTML (Structure)\nThe skeleton of the page.\n`<h1>Hello World</h1>`\n\n### 2. CSS (Style)\nThe makeup/appearance.\n`h1 { color: blue; }`\n\n### 3. JavaScript (Action)\n The brain/logic.\n`document.querySelector('h1').innerText = 'Hi!';`",
+        "keyPoints": [
+          "HTML = Structure",
+          "CSS = Style",
+          "JS = Logic"
+        ]
+      },
+      {
+        "id": "p3",
+        "title": "Data Structures",
+        "description": "Arrays, lists, trees, and graphs",
+        "completed": false,
+        "xp": 200,
+        "content": "**Data Structures** organize information efficiently.\n\n### 1. Arrays / Lists\nOrdered collection of items.\n`list = [1, 2, 3]`\nFast to access by index.\n\n### 2. Stacks & Queues\n- **Stack:** LIFO (Last In, First Out) like plates.\n- **Queue:** FIFO (First In, First Out) like a line.\n\n### 3. Trees\nHierarchical structure (like folders on PC).\nIdentify root, branches, and leaves.",
+        "keyPoints": [
+          "Organize data efficiently",
+          "Access speed matters",
+          "Choose right structure"
+        ]
+      }
+    ],
+    "history": [
+      {
+        "id": "h1",
+        "title": "Ancient Civilizations",
+        "description": "Mesopotamia, Egypt, and Indus Valley",
+        "completed": false,
+        "xp": 100,
+        "content": "**Ancient Civilizations** formed near rivers.\n\n### 1. Mesopotamia\n- \"Land between rivers\" (Tigris & Euphrates).\n- Invented writing (Cuneiform) and the wheel.\n\n### 2. Ancient Egypt\n- Nile River valley.\n- Known for Pyramids, Pharaohs, and Hieroglyphs.\n\n### 3. Indus Valley\n- Advanced city planning (Harappa & Mohenjo-Daro).\n- Had drainage and water systems!",
+        "keyPoints": [
+          "Rivers = Life",
+          "Writing developed",
+          "Agriculture started"
+        ]
+      },
+      {
+        "id": "h2",
+        "title": "The Renaissance",
+        "description": "Art, science, and culture rebirth",
+        "completed": false,
+        "xp": 120,
+        "content": "The **Renaissance** (14th-17th century) means \"Rebirth\".\n\n### 1. Art\nDa Vinci (Mona Lisa) and Michelangelo (David) focused on realism and perspective.\n\n### 2. Science\nGalileo and Copernicus proved the Earth revolves around the Sun (Heliocentrism).\n\n### 3. Humanism\nShift from focusing only on religion to human potential and achievement.",
+        "keyPoints": [
+          "Rebirth of culture",
+          "Scientific revolution",
+          "Focus on human potential"
+        ]
+      },
+      {
+        "id": "h3",
+        "title": "World War II",
+        "description": "Global conflict and its aftermath",
+        "completed": false,
+        "xp": 150,
+        "content": "**WWII** (1939-1945) was the deadliest conflict in history.\n\n### 1. The Sides\n- **Allies:** USA, UK, USSR, France.\n- **Axis:** Germany, Japan, Italy.\n\n### 2. Key Events\n- **1939:** Germany invades Poland.\n- **1941:** Pearl Harbor (USA joins).\n- **1944:** D-Day (Normandy invasion).\n- **1945:** Atomic bombs & war ends.\n\n### 3. Aftermath\n- United Nations formed.\n- Cold War began.",
+        "keyPoints": [
+          "Global scale",
+          "Nuclear age began",
+          "United Nations formed"
+        ]
+      }
+    ],
+    "language": [
+      {
+        "id": "l1",
+        "title": "Grammar Essentials",
+        "description": "Nouns, verbs, and sentence structure",
+        "completed": false,
+        "xp": 100,
+        "content": "**Grammar** is the rulebook of language.\n\n### 1. Parts of Speech\n- **Noun:** Person, place, thing (Cat, London).\n- **Verb:** Action (Run, Is, Think).\n- **Adjective:** Describes noun (Blue, Fast).\n\n### 2. Sentence Structure\n- Subject + Verb + Object.\n- \"The cat (S) ate (V) the fish (O).\"\n\n### 3. Punctuation\n- Period (.) stops.\n- Comma (,) pauses.\n- Question mark (?) asks.",
+        "keyPoints": [
+          "Parts of speech",
+          "S-V-O structure",
+          "Punctuation matters"
+        ]
+      },
+      {
+        "id": "l2",
+        "title": "Creative Writing",
+        "description": "Storytelling techniques and character",
+        "completed": true,
+        "xp": 120,
+        "content": "**Creative Writing** is painting with words.\n\n### 1. Show, Don't Tell\n- **Tell:** He was angry.\n- **Show:** He slammed his fist, his face turning red.\n\n### 2. Plot Arc\n- Exposition (Start)\n- Rising Action\n- Climax (Peak)\n- Falling Action\n- Resolution (End)\n\n### 3. Character\nGive them goals, flaws, and distinct voices.",
+        "keyPoints": [
+          "Show dont tell",
+          "Story arc structure",
+          "Deep characters"
+        ]
+      },
+      {
+        "id": "l3",
+        "title": "Public Speaking",
+        "description": "Rhetoric and persuasion",
+        "completed": false,
+        "xp": 150,
+        "content": "**Public Speaking** is about connection.\n\n### 1. The 3 Ps\n- **Prepare:** Know your content.\n- **Practice:** Rehearse out loud.\n- **Present:** Eye contact and body language.\n\n### 2. Rhetoric (Aristotle)\n- **Ethos:** Credibility.\n- **Pathos:** Emotion.\n- **Logos:** Logic/Data.\n\n### 3. Hook\nStart with a story, fact, or question to grab attention immediately.",
+        "keyPoints": [
+          "Practice is key",
+          "Ethos/Pathos/Logos",
+          "Engage audience"
+        ]
+      }
+    ],
+    "general": [
+      {
+        "id": "g1",
+        "title": "Critical Thinking",
+        "description": "Analyzing arguments and logic",
+        "completed": false,
+        "xp": 100,
+        "content": "**Critical Thinking** is thinking about thinking.\n\n### 1. Question Assumptions\nDon't just accept things. Ask \"How do we know this is true?\"\n\n### 2. Analyze Arguments\n- **Premise:** The reasons given.\n- **Conclusion:** The point being made.\nDoes the premise actually support the conclusion?\n\n### 3. Biases\nBe aware of Confirmation Bias (only seeing what you agree with) and Survivorship Bias.",
+        "keyPoints": [
+          "Question everything",
+          "Check evidence",
+          "Spot biases"
+        ]
+      },
+      {
+        "id": "g2",
+        "title": "Financial Literacy",
+        "description": "Budgeting, saving, and investing",
+        "completed": true,
+        "xp": 120,
+        "content": "**Financial Literacy** means money management.\n\n### 1. Budgeting (50/30/20 Rule)\n- 50% Needs (Rent, Food).\n- 30% Wants (Fun, Hobbies).\n- 20% Savings/Debt.\n\n### 2. Compound Interest\n\"Standard interest is linear; Compound is exponential.\"\nInvesting early makes your money grow money!\n\n### 3. Assets vs Liabilities\n- **Asset:** Puts money in pocket (Stock, Rental).\n- **Liability:** Takes money out (Car loan, Credit debt).",
+        "keyPoints": [
+          "Spend less than earn",
+          "Compound interest",
+          "Buy assets"
+        ]
+      },
+      {
+        "id": "g3",
+        "title": "Time Management",
+        "description": "Productivity and flow state",
+        "completed": false,
+        "xp": 100,
+        "content": "**Time Management** is life management.\n\n### 1. Pomodoro Technique\n- Work 25 minutes.\n- Break 5 minutes.\n- Repeat.\n\n### 2. Eisenhower Matrix\nSort tasks by:\n- **Urgent & Important:** Do now.\n- **Important but Not Urgent:** Schedule it.\n- **Urgent but Not Important:** Delegate.\n- **Neither:** Delete.\n\n### 3. Flow State\nDeep work where you lose track of time. Needs high challenge + high skill match.",
+        "keyPoints": [
+          "Prioritize tasks",
+          "Focus blocks",
+          "Minimize distractions"
+        ]
+      }
+    ]
+  },
+  "userAchievements": [
+    {
+      "id": "a1",
+      "title": "First Step",
+      "description": "Joined SovereignMind",
+      "icon": "🚀",
+      "unlocked": true
+    },
+    {
+      "id": "a2",
+      "title": "Math Whiz",
+      "description": "Complete a Math lesson",
+      "icon": "📐",
+      "unlocked": true
+    },
+    {
+      "id": "a3",
+      "title": "Code Master",
+      "description": "Complete a Programming lesson",
+      "icon": "💻",
+      "unlocked": false
+    },
+    {
+      "id": "a4",
+      "title": "Historian",
+      "description": "Complete a History lesson",
+      "icon": "📜",
+      "unlocked": false
+    },
+    {
+      "id": "a5",
+      "title": "Polymath",
+      "description": "Complete 5 lessons total",
+      "icon": "🧠",
+      "unlocked": true
+    },
+    {
+      "id": "a6",
+      "title": "Dedicated",
+      "description": "Login 3 days in a row",
+      "icon": "🔥",
+      "unlocked": false
+    }
+  ],
+  "userStats": {
+    "xp": 590,
+    "level": 2,
+    "streak": 1,
+    "lessonsCompleted": 5
+  }
+}
